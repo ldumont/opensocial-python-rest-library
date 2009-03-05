@@ -172,6 +172,7 @@ class OpenSocial(object):
 			
 			WARNING THIS CODE HAS NOT BEEN TESTED!!
 		'''
+		raise NotImplementedError()
 		
 		# the request
 		request_string = 'groups/%s/@self' % id
@@ -181,21 +182,7 @@ class OpenSocial(object):
 		
 		return	response['entry']
 				
-				
-	# def get_activities(self, uid, target):
-	# 	
-	# 	request_string = 'activities/%s/%s' % (uid, target)
-	# 	#print request_string
-	# 	params = None
-	# 
-	# 	try:
-	# 		response = self.get_request(request_string, params)				
-	# 		return response['entry']
-	# 		
-	# 	except Exception:
-	# 		raise OpenSocialError
-		
-	
+
 
 		
 		
